@@ -8,8 +8,7 @@ local frame = CreateFrame("Frame")
 
 -- Initialize function
 local function Initialize()
-    print("|cff00ff00" .. addonName .. " loaded successfully!|r")
-    print("Use /editmode, /em, or /edit to open Edit Mode")
+    print("Use /em, or /edit to open Edit Mode\nUse /rl to reload\nUse /cd for Cooldown Manager")
 end
 
 -- Event handler
@@ -20,7 +19,6 @@ local function OnEvent(self, event, ...)
             Initialize()
         end
     elseif event == "PLAYER_ENTERING_WORLD" then
-        print("|cffff9900Welcome back! " .. addonName .. " is ready.|r")
     end
 end
 
@@ -48,3 +46,5 @@ SLASH_CD2 = "/cooldown"
 SlashCmdList["CD"] = function(msg)
     CooldownViewerSettings:SetShown(not CooldownViewerSettings:IsShown())
 end
+
+
