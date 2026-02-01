@@ -64,4 +64,7 @@ SlashCmdList["POOCOMM"] = function(msg)
     print(" ")
     print("Reload:")
     print("/rl")
+    print(" ")
+    print("Pull:")
+    print("/pull X")
 end
