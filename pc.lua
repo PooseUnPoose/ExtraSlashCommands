@@ -47,8 +47,14 @@ SlashCmdList["CD"] = function(msg)
     CooldownViewerSettings:SetShown(not CooldownViewerSettings:IsShown())
 end
 
-SLASH_ESC1 = "/esc"
-SlashCmdList["ESC"] = function(msg)
+-- Slash command 4: /pull
+SLASH_PULL1 = "/pull"
+SlashCmdList["PULL"] = function(seconds)
+  C_PartyInfo.DoCountdown(seconds)
+end
+
+SLASH_POOCOMM1 = "/poocomm"
+SlashCmdList["POOCOMM"] = function(msg)
     print("Commands:\n")
     print("Edit mode:")
     print("/em /edit /editmode\n")

@@ -1,5 +1,5 @@
 ## Interface: 120000
-## Title: Extra Slash Commands
+## Title: PooseCommands
 ## Notes: It adds a few slash commands for convenience
 ## Author: Poose
 ## Version: 1.0
